@@ -1,16 +1,37 @@
-# React + Vite
+# 🧊 냉장고 레시피 웹사이트 (My Soft Wed)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 프로젝트 소개
+React + Vite 기반으로 만든 냉장고 레시피 추천 웹사이트입니다.  
+재료 입력, BMI 분석, 레시피 추천 등의 기능을 제공합니다.
 
-Currently, two official plugins are available:
+## ⚙️ 기술 스택
+- React + Vite
+- Zustand (상태 관리)
+- React Router
+- Axios (API 호출 예정)
+- CSS / Tailwind (선택)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 실행 방법
+1. Node.js (v16 이상) 설치
+2. 프로젝트 클론
+   ```bash
+   git clone https://github.com/ju-noo/my-soft-wed.git
+   cd my-soft-wed
 
-## React Compiler
+패키지 설치 및 실행
+npm install
+npm run dev
+브라우저 접속
+http://localhost:5173
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+주요 기능
 
-## Expanding the ESLint configuration
+재료 입력 페이지 (/ingredient)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+BMI 입력 및 분석 (/bmi)
+
+개인 맞춤형 레시피 추천 (/recommend)
+
+상세 레시피 보기 (/detail/:id)
+
+© 2025 Ju-noo. All rights reserved.
