@@ -66,3 +66,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+html {
+  font-size: 18px; /* 기본 폰트 크기 */
+  zoom: 1.1; /* 화면 전체 확대 (1.1 = 110%) */
+}

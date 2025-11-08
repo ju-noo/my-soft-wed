@@ -58,8 +58,8 @@ export default function RecommendPage() {
               <h4 style={{ margin: '6px 0' }}>{r.name}</h4>
               {r.summary && <p style={{ fontSize: 13, color: '#555' }}>{r.summary}</p>}
               <p style={{ fontSize: 12, color: '#888' }}>
-                재료: {r.ingredients.slice(0, 3).join(', ')}
-                {r.ingredients.length > 3 ? '...' : ''}
+                재료: {r.ingredients.slice(0, 4).join(', ')}
+                {r.ingredients.length > 4 ? '....' : ''}
               </p>
             </div>
           ))}

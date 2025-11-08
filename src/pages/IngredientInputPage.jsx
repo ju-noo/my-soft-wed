@@ -35,7 +35,7 @@ export default function IngredientInputPage() {
       <div style={{ display: 'flex', gap: 8, marginBottom: 12 }}>
         <input
           type="text"
-          placeholder="예: 김치, 두부 (엔터로 추가)"
+          placeholder="예: 김치 (엔터로 추가)"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyPress={handleKeyPress}

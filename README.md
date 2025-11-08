@@ -22,6 +22,7 @@ React + Vite 기반으로 만든 냉장고 레시피 추천 웹사이트입니�
 npm install
 npm run dev
 브라우저 접속
+
 http://localhost:5173
 
 주요 기능

@@ -33,6 +33,12 @@ export default function BMIPage() {
     }, 5000)
   }
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      calculateBMI()
+    }
+  }
+
   return (
     <div style={{ padding: '20px' }}>
       <h2>BMI 계산기</h2>
@@ -45,6 +51,7 @@ export default function BMIPage() {
               placeholder="키(cm)"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
+              onKeyDown={handleKeyDown}
             />
           </div>
           <div style={{ marginBottom: '10px' }}>
@@ -53,6 +60,7 @@ export default function BMIPage() {
               placeholder="몸무게(kg)"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
+              onKeyDown={handleKeyDown}
             />
           </div>
           <button onClick={calculateBMI}>계산</button>
